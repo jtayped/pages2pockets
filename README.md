@@ -144,7 +144,3 @@ Project Link: [https://github.com/jtayped/pages2pockets](https://github.com/jtay
 [TailwindCSS-url]: https://tailwindcss.com/
 [Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
 [Firebase-url]: https://firebase.google.com/
-
-```
-
-```
