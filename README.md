@@ -62,9 +62,9 @@
 
 ### Built With
 
-[![React][React.js]][React.js]<br/>
-[![Tailwind CSS][TailwindCSS]][TailwindCSS]<br/>
-[![Firebase][Firebase]][Firebase]<br/>
+[![React][React.js]][React-url]<br/>
+[![Tailwind CSS][TailwindCSS]][TailwindCSS-url]<br/>
+[![Firebase][Firebase]][Firebase-url]<br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
