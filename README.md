@@ -70,9 +70,9 @@ This is the home page for Pages2Pockets, a website in Catalan and Spanish that h
 
 ### Built With
 
-[![React][React.js]][React-url]<br/>
-[![Tailwind CSS][TailwindCSS]][TailwindCSS-url]<br/>
-[![Firebase][Firebase]][Firebase-url]<br/>
+[![React][React.js]][React.js]<br/>
+[![Tailwind CSS][TailwindCSS]][TailwindCSS]<br/>
+[![Firebase][Firebase]][Firebase]<br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
