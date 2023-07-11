@@ -27,8 +27,6 @@
     Welcome to Pages2Pockets, a website in Catalan and Spanish that helps families save money on books by passing down the books to the next academic year. The website is built using ReactJS, Tailwind CSS, and Firebase.
     <br />
     <br />
-    <a href="https://example.com">View Demo</a>
-    ·
     <a href="https://github.com/jtayped/pages2pockets/issues">Report Bug</a>
     ·
     <a href="https://github.com/jtayped/pages2pockets/issues">Request Feature</a>
@@ -62,12 +60,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-idea]](https://github.com/jtayped/pages2pockets)
-
-This is the home page for Pages2Pockets, a website in Catalan and Spanish that helps families save money on books by passing down the books to the next academic year.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 [![React][React.js]][React.js]<br/>
@@ -92,9 +84,10 @@ To use our app, you need to have a device with a modern web browser like Google 
 1. Clone the repo: `git clone https://github.com/yourusername/pages2pockets.git`
 2. Install the dependencies:
 
-````cd pages2pockets
-npm install```
-
+```
+cd pages2pockets
+npm install
+```
 
 3. Start the app: `npm start`
 
@@ -151,4 +144,7 @@ Project Link: [https://github.com/jtayped/pages2pockets](https://github.com/jtay
 [TailwindCSS-url]: https://tailwindcss.com/
 [Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
 [Firebase-url]: https://firebase.google.com/
-````
+
+```
+
+```
