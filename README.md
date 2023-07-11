@@ -81,7 +81,7 @@ To use our app, you need to have a device with a modern web browser like Google 
 
 ### Installation
 
-1. Clone the repo: `git clone https://github.com/yourusername/pages2pockets.git`
+1. Clone the repo: `git clone https://github.com/jtayped/pages2pockets.git`
 2. Install the dependencies:
 
 ```
@@ -120,7 +120,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [your-email@example.com](mailto:your-email@example.com)
+Joel Taylor - [jtayped@gmail.com](mailto:jtayped@gmail.com)
 
 Project Link: [https://github.com/jtayped/pages2pockets](https://github.com/jtayped/pages2pockets)
 
