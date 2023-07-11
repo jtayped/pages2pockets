@@ -18,7 +18,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/jtayped/pages2pockets">
-    <img src="add_your_logo_url_here" alt="Logo" width="120" height="120">
+    <img src="https://github.com/jtayped/pages2pockets/blob/6e94495f2e640578a0223231dcccc0790cd12065/src/assets/images/branding/default.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Pages2Pockets</h3>
