@@ -2,11 +2,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-// CSS
-import "./App.css";
-
 // JSX Components
-import {Header, Home, SignUp, LogIn} from "./pages"
+import { Home, SignUp, LogIn, NotFound } from "./pages";
+import {Header} from "./containers"
 
 function App() {
   return (
