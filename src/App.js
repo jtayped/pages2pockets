@@ -4,19 +4,21 @@ import { Routes, Route } from "react-router-dom";
 
 // JSX Components
 import { Home, SignUp, LogIn, NotFound } from "./pages";
-import {Header} from "./containers"
+import { Header } from "./containers";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Header />}>
-        <Route index element={<Home />} />
+    <React.Fragment>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+
         <Route path="signup" element={<SignUp />} />
         <Route path="login" element={<LogIn />} />
 
         <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </React.Fragment>
   );
 }
 

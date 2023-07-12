@@ -1,9 +1,17 @@
-import React from 'react'
+// React Util
+import React from "react";
+
+// JSX Components
+import { Hero } from "../containers";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="bg-background font-poppins">
+      <header className="flex flex-col">
+        <Hero />
+      </header>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
