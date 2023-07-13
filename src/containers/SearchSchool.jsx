@@ -10,24 +10,17 @@ const SearchSchool = () => {
   }
 
   return (
-    <form
-      onSubmit={(e) => search(e)}
-      className="flex justify-between p-1.5 w-full backdrop-blur-sm border-2 border-primary rounded-lg text-text pl-3"
-    >
-      <div className="flex items-center gap-2 w-full pr-2">
-        <BsSearch size={23} />
+    <form className="flex items-center gap-3" onSubmit={(e) => search(e)}>
+      <div className="flex items-center gap-3 w-full border px-4 py-2 rounded-full border-black/60">
+        <BsSearch size={20} />
         <input
+          className="w-full bg-transparent outline-none"
           type="text"
-          placeholder="Search"
-          className="bg-transparent outline-none text-lg w-full"
+          placeholder="Busca tu escuela"
         />
       </div>
-
-      <button
-        type="submit"
-        className="bg-primary flex items-center justify-center p-2 rounded"
-      >
-        <BsSend size={22} />
+      <button className="bg-accent px-4 py-2 rounded-full font-semibold text-white">
+        Buscar
       </button>
     </form>
   );
