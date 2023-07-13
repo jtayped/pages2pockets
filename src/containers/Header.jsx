@@ -3,16 +3,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Images
-import Logo from "../assets/images/branding/logo.png";
+import Default from "../assets/images/branding/default.png";
 
 // Icons
 import { BsPlus } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="fixed h-header bg-gradient-to-b from-background text-text w-full flex items-center justify-between px-10 font-poppins z-[50]">
+    <div className="fixed h-[calc(header-1)] bg-gradient-to-b from-background text-text w-full flex items-center justify-between pl-5 pr-10 font-poppins z-[50] border-b border-black/10">
       <Link to="/">
-        <img className="h-header" src={Logo} alt="Logo" />
+        <img
+          src={Default}
+          className="h-header w-[275px] object-cover"
+          alt="Logo"
+        />
       </Link>
       <nav className="flex items-center">
         <Link
