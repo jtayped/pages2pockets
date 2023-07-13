@@ -2,7 +2,7 @@
 import React from "react";
 
 // Icons
-import { BsSend, BsSearch } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 
 const SearchSchool = () => {
   function search(event) {
