@@ -10,7 +10,7 @@ import { BsPlus } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="fixed h-[calc(header-1)] bg-gradient-to-b from-background text-text w-full flex items-center justify-between pl-5 pr-10 font-poppins z-[50] border-b border-black/10">
+    <div className="fixed h-[calc(header-1)] bg-background text-text w-full flex items-center justify-between pl-5 pr-10 font-poppins z-[50] border-b border-black/10">
       <Link to="/">
         <img
           src={Default}

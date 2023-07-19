@@ -1,9 +1,32 @@
-import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { collection, setDoc, getDoc, getDocs, doc } from "firebase/firestore";
-import { auth, googleProvider } from "./config";
-import { v4 as uuidv4 } from "uuid";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
+import {
+  collection,
+  setDoc,
+  getDocs,
+  doc,
+  serverTimestamp,
+  query,
+  where,
+} from "firebase/firestore";
+import { uploadBytes, ref } from "firebase/storage";
+import { auth, googleProvider, db, storage } from "./config";
 
-export const createUser = async (username, mainSchoolID) => {
+export const uploadFile = async (file, name, folderName) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const profileRef = ref(storage, `/${folderName}/${name}`);
+      uploadBytes(profileRef, file).then(() => resolve());
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+export const createUser = async (username, pfp) => {
   return new Promise(async (resolve, reject) => {
     try {
       const userRef = doc(db, "/users", auth.currentUser.uid);
@@ -17,12 +40,12 @@ export const createUser = async (username, mainSchoolID) => {
       } else {
         const newUser = {
           username: username,
-          mainSchoolID: mainSchoolID,
           timestamp: serverTimestamp(),
         };
 
         // Set the new article document in the specified path
         await setDoc(userRef, newUser);
+        await uploadFile(pfp, auth.currentUser.uid, "profilePictures");
         resolve("User Created!");
       }
     } catch (error) {
@@ -34,7 +57,7 @@ export const createUser = async (username, mainSchoolID) => {
 export const signUp = async (email, password) => {
   return new Promise(async (resolve, reject) => {
     try {
-      signInWithEmailAndPassword(auth, email, password).then(
+      createUserWithEmailAndPassword(auth, email, password).then(
         (userCredentials) => resolve(userCredentials)
       );
     } catch (error) {
