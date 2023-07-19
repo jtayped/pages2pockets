@@ -130,7 +130,7 @@ const SignUp = () => {
           <hr className="bg-black/90" />
           <div>
             <h1 className="text-2xl font-inter font-bold">
-              Crea tu nueva cuenta!
+              ¡Crea tu nueva cuenta!
             </h1>
             <p className="">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
@@ -199,7 +199,7 @@ const SignUp = () => {
                 />
               </label>
             </div>
-            <button className="bg-primary text-white font-inter font-bold py-2 rounded flex justify-center">
+            <button type="submit" className="bg-primary text-white font-inter font-bold py-2 rounded flex justify-center">
               {loading ? <Spinner /> : "Crear"}
             </button>
             {error ? (
@@ -208,7 +208,7 @@ const SignUp = () => {
               </p>
             ) : null}
             <p className="text-center text-sm">
-              Ya tienes cuenta?{" "}
+              ¿Ya tienes cuenta?{" "}
               <Link to="/login" className="font-bold hover:underline">
                 Inicia sessión
               </Link>
