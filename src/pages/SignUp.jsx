@@ -216,7 +216,7 @@ const SignUp = () => {
           </form>
         </div>
       </div>
-      <div className="relative h-full w-full flex items-end p-7 justify-center">
+      <div className="relative h-full w-full flex items-end p-7 justify-center bg-black">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover object-center"
           src={SignUpImage}
